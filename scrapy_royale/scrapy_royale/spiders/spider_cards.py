@@ -1,8 +1,9 @@
 from unicodedata import name
 import scrapy
 
-# Estado actual: Este spider imprime los lincks relativos que lleva a las 106 cartas del juego.
-# Siquiente paso: Usando el link relativo acceder al nombre de cada carta he imprimirlo.
+# Estado actual: Extrae el nombre de todas las cartas en un archivo csv.
+# Siquiente paso: guardar los nombres de las cartas sin espacios.
+# Objetivo del dia: 
 
 
 #   XPATH Sentenses
@@ -13,10 +14,27 @@ import scrapy
 class cards(scrapy.Spider):
     name = 'cards'
     start_urls = ['https://clashroyale.fandom.com/wiki/Card_Overviews']
+    custom_settings = {
+                        'FEED_URI':'cards.csv',
+                        'FEED_FORMAT':'csv',
+                        'FEED_EXPORT_ENCODING': 'utf-8'
+                        }
 
     def parse(self, response):
-        cards = response.xpath('//div[@class="card-overview"]//span[@class="mw-headline"]/a/@href').getall()
-        print('*'*100)
-        for card in cards:
-            print(f'- {card}')
-        print('*'*100)
+
+        lincks = response.xpath('//div[@class="card-overview"]//span[@class="mw-headline"]/a/@href').getall()
+        
+        for linck in lincks:
+            yield response.follow(linck, callback=self.get_info)
+            
+        
+
+    def get_info(self, response):
+        
+        name = response.xpath('//div[@class="page-header__title-wrapper"]/h1/text()').get()
+
+        yield {'names' : name}
+
+
+
+
