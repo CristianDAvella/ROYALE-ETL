@@ -3,13 +3,13 @@ import scrapy
 
 # Estado actual: Extrae el nombre de todas las cartas en un archivo csv.
 # Siquiente paso: guardar los nombres de las cartas sin espacios.
-# Objetivo del dia: 
+# Objetivo del dia: Definir informacion que se guardara de cada carta y conseguir su respectiva sentencia xpath.
 
 
 #   XPATH Sentenses
 # Cards's lincks = //div[@class="card-overview"]//span[@class="mw-headline"]/a/@href
-# Caeds's names = //div[@class="page-header__title-wrapper"]/h1/text()
-
+# Cards's names = '//div[@class="mw-parser-output"]//h2[@class="pi-item pi-item-spacing pi-title pi-secondary-background"]/text()
+# 
 
 class cards(scrapy.Spider):
     name = 'cards'
@@ -31,7 +31,7 @@ class cards(scrapy.Spider):
 
     def get_info(self, response):
         
-        name = response.xpath('//div[@class="page-header__title-wrapper"]/h1/text()').get()
+        name = response.xpath('//div[@class="mw-parser-output"]//h2[@class="pi-item pi-item-spacing pi-title pi-secondary-background"]/text()').get()
 
         yield {'names' : name}
 
