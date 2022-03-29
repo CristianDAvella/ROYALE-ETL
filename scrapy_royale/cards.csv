@@ -1,107 +1,107 @@
-names
-Minions
-Royal Delivery
-Arrows
-Golden Knight
-Giant Snowball
-Zap
-Skeleton King
-Archer Queen
-Fisherman
-Night Witch
-Mother Witch
-Lumberjack
-Royal Ghost
-Goblin Drill
-Bandit
-X-Bow
-Elixir Collector
-Bomb Tower
-Magic Archer
-Furnace
-Goblin Hut
-Tombstone
-Goblin Cage
-Inferno Tower
-Fireball
-Barbarian Hut
-Cannon
-Mortar
-Graveyard
-Tornado
-The Log
-Mirror
-Poison
-Lightning
-Clone
-Freeze
-Goblin Barrel
-Barbarian Barrel
-Rocket
-Earthquake
-Tesla
-Rage
-Ram Rider
-Electro Wizard
-Lava Hound
-Inferno Dragon
-Miner
-Cannon Cart
-Bowler
-Executioner
-Ice Wizard
-Mega Knight
-Electro Dragon
-Golem
-Princess
-Electro Giant
-Guards
-Dark Prince
-Prince
-Hunter
-Sparky
-Witch
-Goblin Giant
-Wall Breakers
-P.E.K.K.A.
-Skeleton Army
-Battle Healer
-Giant Skeleton
-Balloon
-Zappies
-Heal Spirit
-Three Musketeers
-Ice Golem
-Hog Rider
-Dart Goblin
-Flying Machine
-Elixir Golem
-Royal Hogs
-Battle Ram
-Mega Minion
-Giant
-Wizard
-Musketeer
-Valkyrie
-Firecracker
-Rascals
-Skeleton Barrel
-Electro Spirit
-Mini P.E.K.K.A.
-Ice Spirit
-Baby Dragon
-Goblin Gang
-Elite Barbarians
-Royal Giant
-Minion Horde
-Royal Recruits
-Fire Spirit
-Barbarians
-Bomber
-Goblins
-Bats
-Skeletons
-Archers
-Knight
-Spear Goblins
-Skeleton Dragons
+names,description,cost,rarity
+Lava Hound,“The Lava Hound is a majestic flying beast that attacks buildings. The Lava Pups are less majestic angry babies that attack anything.”,7,Legendary
+Ram Rider,"“Together they charge through the Arena; snaring enemies, knocking down towers... and chewing grass!?”",5,Legendary
+Minions,"“Three fast, unarmored flying attackers. Roses are red, minions are blue, they can fly, and will crush you!”",3,Common
+Ice Wizard,"“This chill caster throws ice shards that slow down enemies' movement and attack speed. Despite being freezing cold, he has a handlebar mustache that's too hot for TV.”",3,Legendary
+Mega Knight,"“He lands with the force of 1,000 mustaches, then jumps from one foe to the next dealing huge area damage. Stand aside!”",7,Legendary
+Sparky,"“Sparky slowly charges up, then unloads MASSIVE area damage. Overkill isn't in her vocabulary.”",6,Legendary
+Princess,"“This stunning Princess shoots flaming arrows from long range. If you're feeling warm feelings towards her, it's probably because you're on fire.”",3,Legendary
+Electro Wizard,"“He lands with a ""POW!"", stuns nearby enemies and shoots lightning with both hands! What a show off.”",4,Legendary
+Cannon Cart,"“A Cannon on wheels?! Bet they won't see that coming! Once you break its shield, it becomes a Cannon not on wheels.”",5,Epic
+Miner,"“The Miner can burrow his way underground and appear anywhere in the Arena. It's not magic, it's a shovel. A shovel that deals reduced damage to Crown Towers.”",3,Legendary
+Bowler,"“This big blue dude digs the simple things in life - Dark Elixir drinks and throwing rocks. His massive boulders roll through their target, hitting everything behind for a strike!”",5,Epic
+Electro Giant,"“He channels electricity through his Zap Pack, a unique device that stuns and damages any troop attacking him within its range. Don't tell him that his finger guns aren't real! He'll zap you.”",8,Epic
+Goblin Drill,"“Building capable of burrowing underground and appearing anywhere in the Arena. Spawns Goblins one at a time until destroyed. Then spawns a few more, to make sure everything nearby has been properly stabbed.”",4,Epic
+Guards,“Three ruthless bone brothers with shields. Knock off their shields and all that's left are three ruthless bone brothers.”,3,Epic
+Executioner,"“He throws his axe like a boomerang, striking all enemies on the way out AND back. It's a miracle he doesn't lose an arm.”",5,Epic
+Inferno Dragon,“Shoots a focused beam of fire that increases in damage over time. Wears a helmet because flying can be dangerous.”,4,Legendary
+X-Bow,“Nice tower you got there. Would be a shame if this X-Bow whittled it down from this side of the Arena...”,6,Epic
+Elixir Collector,“You gotta spend Elixir to make Elixir! This building makes 8 Elixir over its Lifetime. Does not appear in your starting hand.”,6,Rare
+Bomb Tower,“Defensive building that houses a Bomber. Deals area damage to anything dumb enough to stand near it.”,4,Rare
+Barbarian Hut,“Building that periodically deploys Barbarians to fight the enemy. Time to make the Barbarians!”,7,Rare
+Furnace,“The Furnace spawns one Fire Spirit at a time. It also makes great brick-oven pancakes.”,4,Rare
+Goblin Hut,“Building that spawns Spear Goblins. Don't look inside... You don't want to see how they're made.”,5,Rare
+Tesla,"“Defensive building. Whenever it's not zapping the enemy, the power of Electrickery is best kept grounded.”",4,Common
+Tombstone,"“Troop building that periodically deploys Skeletons to fight the enemy... and when destroyed, spawns 4 Skeletons! Creepy.”",3,Rare
+Goblin Cage,"“When the Goblin Cage is destroyed, a Goblin Brawler is unleashed into the Arena! Goblin Brawler always skips leg day.”",4,Rare
+Mortar,"“Defensive building with a long range. Shoots big boulders that deal area damage, but cannot hit targets that get very close!”",4,Common
+Cannon,"“Defensive building. Shoots cannonballs with deadly effect, but cannot target flying troops.”",3,Common
+The Log,"“A spilt bottle of Rage turned an innocent tree trunk into ""The Log"". Now, it seeks revenge by crushing anything in its path! Reduced damage to Crown Towers.”",2,Legendary
+Clone,"“Duplicates all friendly troops in the target area. Cloned troops are fragile, but pack the same punch as the original! Doesn't affect buildings.”",3,Epic
+Graveyard,"“Surprise! It's a party. A Skeleton party, anywhere in the Arena. Yay!”",5,Legendary
+Tornado,"“Drags enemy troops to its center while dealing damage over time, just like a magnet. A big, swirling, Tornado-y magnet.”",3,Epic
+Poison,"“Covers the area in a deadly toxin, damaging enemy troops and buildings over time. Yet somehow leaves the grass green and healthy. Go figure! Reduced damage to Crown Towers.”",4,Epic
+Rage,"“Increases troop movement and attack speed. Buildings attack faster and summon troops quicker, too. Chaaaarge!”",2,Epic
+Mirror,“Mirrors your last card played for +1 Elixir. Will not appear in your starting cards.”,? ,Epic
+Freeze,"“Freezes and damages enemy troops and buildings, making them unable to move or attack. Everybody chill. Reduced damage to Crown Towers.”",4,Epic
+Electro Dragon,“Spits out bolts of electricity hitting up to three targets. Suffers from middle child syndrome to boot.”,5,Epic
+Goblin Barrel,"“Spawns three Goblins anywhere in the Arena. It's going to be a thrilling ride, boys!”",3,Epic
+Barbarian Barrel,"“It rolls over and damages anything in its path, then breaks open and out pops a Barbarian! How did he get inside?!”",2,Epic
+Lightning,“Bolts of lightning damage and stun up to three enemy troops or buildings with the most hitpoints in the target area. Reduced damage to Crown Towers.”,6,Epic
+Earthquake,"“Deals Damage per second to Troops and Crown Towers. Deals huge Building Damage! Does not affect flying units (it is an EARTHquake, after all).”",3,Rare
+Fireball,"“Annnnnd... Fireball. Incinerates a small area, dealing high damage. Reduced damage to Crown Towers.”",4,Rare
+Rocket,“Deals high damage to a small area. Looks really awesome doing it. Reduced damage to Crown Towers.”,6,Rare
+Zap,"“Zaps enemies, briefly stunning them and dealing damage inside a small radius. Reduced damage to Crown Towers.”",2,Common
+Giant Snowball,"“It’s HUGE! Once it began rolling down Frozen Peak, there was no stopping it. Enemies hit are knocked back and slowed down. Reduced damage to Crown Towers.”",2,Common
+Golden Knight,“A warrior with luxurious hair and outstanding flexibility. Demonstrates his aerobics skills on demand.”,4,Champion
+Skeleton King,“The King of the undead himself. He sometimes feels lonely (could be due to his non flattering features) and will summon friends to join him in the battle even after death. Tough guys have feelings too!”,4,Champion
+Arrows,“Arrows are characters,3,Common
+Fisherman,"“His Ranged Attack can pull enemies towards him, and pull himself to enemy buildings. He's also mastered the ancient art of 'Fish Slapping'.”",3,Legendary
+Archer Queen,"“She is fast, deadly and hard to catch. Beware of her crossbow bolts and try not to blink - you might miss her!”",5,Champion
+Mother Witch,"“Places a curse on enemy troops with each attack. When a cursed troop is destroyed, it turns into a building-targeting Hog that fights alongside the Mother Witch. She also bakes great cookies.”",4,Legendary
+Lumberjack,“He chops trees by day and hunts The Log by night. His bottle of Rage spills everywhere when he's defeated.”,4,Legendary
+Magic Archer,"“Not quite a Wizard, nor an Archer - he shoots a magic arrow that passes through and damages all enemies in its path. It's not a trick, it's magic!”",4,Legendary
+Night Witch,"“Summons Bats to do her bidding. If you get too close, she isn't afraid of pitching in with her mean-looking battle staff.”",4,Legendary
+Royal Ghost,“He drifts invisibly through the Arena until he's startled by an enemy... then he attacks! Then he's invisible again! Zzzz.”,3,Legendary
+Golem,"“Slow but durable, only attacks buildings. When destroyed, explosively splits into two Golemites and deals area damage!”",8,Epic
+Hunter,"“He deals BIG damage up close - not so much at range. What he lacks in accuracy, he makes up for with his impressively bushy eyebrows.”",4,Epic
+Bandit,"“The Bandit dashes to her target and delivers an extra big hit! While dashing, she can't be touched. The mask keeps her identity safe... and gives her bonus cool points!”",3,Legendary
+Goblin Giant,“This jolly green Goblin Giant stomps towards enemy buildings. He carries two Spear Goblins everywhere he goes. It's a weird but functional arrangement.”,6,Epic
+Prince,"“Don't let the little pony fool you. Once the Prince gets a running start, you WILL be trampled. Deals double damage once he gets charging.”",5,Epic
+Dark Prince,"“The Dark Prince deals area damage and lets his spiked club do the talking for him - because when he does talk, it sounds like he has a bucket on his head.”",4,Epic
+Balloon,"“As pretty as they are, you won't want a parade of THESE balloons showing up on the horizon. Drops powerful bombs and when shot down, crashes dealing area damage.”",5,Epic
+Witch,"“Summons Skeletons, shoots destructo beams, has glowing pink eyes that unfortunately don't shoot lasers.”",5,Epic
+P.E.K.K.A.,"“A heavily armored, slow melee fighter. Swings from the hip but packs a huge punch!”",7,Epic
+Wall Breakers,“A daring duo of dangerous dive bombers. Nothing warms a Wall Breaker's cold and undead heart like blowing up buildings.”,2,Epic
+Giant Skeleton,"“The bigger the skeleton, the bigger the bomb. Carries a bomb that blows up when the Giant Skeleton dies.”",6,Epic
+Skeleton Army,"“Spawns an army of Skeletons. Meet Larry and his friends Harry, Terry, Gerry, Mary, etc.”",3,Epic
+Battle Healer,"“With each attack, she unleashes a powerful healing aura that restores Hitpoints to herself and friendly Troops. When she isn't attacking, she passively heals herself!”",4,Rare
+Baby Dragon,"“Burps fireballs from the sky that deal area damage. Baby dragons hatch cute, hungry and ready for a barbeque.”",4,Epic
+Elixir Golem,"“Splits into two Elixir Golemites when destroyed, which split into two sentient Blobs when defeated. A Blob gives your opponent 1 Elixir when destroyed!”",3,Rare
+Zappies,“Spawns a pack of miniature Zap machines. Who controls them...? Only the Master Builder knows.”,4,Rare
+Dart Goblin,"“Runs fast, shoots far and chews gum. How does he blow darts with a mouth full of Double Trouble gum? Years of didgeridoo lessons.”",3,Rare
+Ice Golem,"“He's tough, targets buildings and explodes when destroyed, slowing nearby enemies. Made entirely out of ice... or is he?! Yes.”",2,Rare
+Three Musketeers,"“Trio of powerful, independent markswomen, fighting for justice and honor. Disrespecting them would not be just a mistake, it would be a cardinal sin!”",9,Rare
+Royal Hogs,“The King’s personal pets are loose! They love to chomp on apples and towers alike - who let the hogs out?!”,5,Rare
+Heal Spirit,"“A mischevious Spirit that leaps at enemies, dealing Damage and leaving behind a powerful healing effect that restores Hitpoints to friendly Troops!”",1,Rare
+Flying Machine,"“The Master Builder has sent his first contraption to the Arena! It's a fast and fun flying machine, but fragile!”",4,Rare
+Wizard,"“The most awesome man to ever set foot in the arena, the Wizard will blow you away with his handsomeness... and/or fireballs.”",5,Rare
+Hog Rider,"“Fast melee troop that targets buildings and can jump over the river. He followed the echoing call of ""Hog Riderrrrr"" all the way through the Arena doors.”",4,Rare
+Mega Minion,"“Flying, armored and powerful. What could be its weakness?! Cupcakes.”",3,Rare
+Battle Ram,"“Two Barbarians holding a big log charge at the nearest building, dealing significant damage if they connect; then they go to town with their swords!”",4,Rare
+Giant,"“Slow but durable, only attacks buildings. A real one-man wrecking crew!”",5,Rare
+Valkyrie,"“Tough melee fighter, deals area damage around her. Swarm or horde, no problem! She can take them all out with a few spins.”",4,Rare
+Musketeer,"“Don't be fooled by her delicately coiffed hair, the Musketeer is a mean shot with her trusty boomstick.”",4,Rare
+Firecracker,"“Shoots a firework that explodes on impact, damaging the target and showering anything behind it with sparks. This is what happens when Archers get bored!”",3,Common
+Mini P.E.K.K.A.,"“The Arena is a certified butterfly-free zone. No distractions for P.E.K.K.A, only destruction.”",4,Rare
+Rascals,"“Spawns a mischievous trio of Rascals! The boy takes the lead, while the girls pelt enemies from behind... with slingshots full of Double Trouble Gum!”",5,Common
+Skeleton Barrel,"“It's a Skeleton party in the sky, until all the balloons pop... then it's a Skeleton party on the ground!”",3,Common
+Minion Horde,"“Six fast, unarmored flying attackers. Three's a crowd, six is a horde!”",5,Common
+Elite Barbarians,"“Spawns a pair of leveled up Barbarians. They're like regular Barbarians, only harder, better, faster and stronger.”",6,Common
+Electro Spirit,"“Jumps on enemies, dealing Area Damage and stunning up to 9 enemy Troops. Locked in an eternal battle with Knight for the best mustache.”",1,Common
+Goblin Gang,"“Spawns five Goblins - three with knives, two with spears - at a discounted Elixir cost. It's like a Goblin Value Pack!”",3,Common
+Ice Spirit,“Spawns one lively little Ice Spirit to freeze a group of enemies. Stay frosty.”,1,Common
+Royal Giant,“Destroying enemy buildings with his massive cannon is his job; making a raggedy blond beard look good is his passion.”,6,Common
+Royal Recruits,"“Deploys a line of recruits armed with spears, shields and wooden buckets. They dream of ponies and one day wearing metal buckets.”",7,Common
+Bats,"“Spawns a handful of tiny flying creatures. Think of them as sweet, purple... balls of DESTRUCTION!”",2,Common
+Skeleton Dragons,“This pair of skeletal scorchers deal Area Damage and fly above the Arena. They also play a mean rib cage xylophone duet.”,4,Common
+Barbarians,“A horde of melee attackers with mean mustaches and even meaner tempers.”,5,Common
+Skeletons,"“Three fast, very weak melee fighters. Surround your enemies with this pile of bones!”",1,Common
+Bomber,"“Small, lightly protected skeleton who throws bombs. Deals area damage that can wipe out a swarm of enemies.”",2,Common
+Fire Spirit,“This Fire Spirit is on a kamikaze mission to give you a warm hug. It'd be adorable if it wasn't on fire.”,1,Common
+Goblins,"“Three fast, unarmored melee attackers. Small, fast, green and mean!”",2,Common
+Spear Goblins,“Three unarmored ranged attackers. Who the heck taught these guys to throw spears!?! Who thought that was a good idea?!”,2,Common
+Knight,"“A tough melee fighter. The Barbarian's handsome, cultured cousin. Rumor has it that he was knighted based on the sheer awesomeness of his mustache alone.”",3,Common
+Archers,"“A pair of lightly armored ranged attackers. They'll help you take down ground and air units, but you're on your own with hair coloring advice.”",3,Common
+Inferno Tower,"“Defensive building, roasts targets for damage that increases over time. Burns through even the biggest and toughest enemies!”",5,Rare
+Royal Delivery,"“No need to sign for this package! Dropped from the sky, it deals Area Damage to enemy Troops before delivering a Royal Recruit. The empty box is also handy for espionage.”",3,Common

@@ -1,15 +1,20 @@
 from unicodedata import name
 import scrapy
 
-# Estado actual: Extrae el nombre de todas las cartas en un archivo csv.
-# Siquiente paso: guardar los nombres de las cartas sin espacios.
-# Objetivo del dia: Definir informacion que se guardara de cada carta y conseguir su respectiva sentencia xpath.
+# Estado actual: Extrae informacion de todas las cartas en un archivo csv.
+# Siquiente paso: tipear informacion usando pandas.
+# Objetivo del dia: 
 
 
 #   XPATH Sentenses
 # Cards's lincks = //div[@class="card-overview"]//span[@class="mw-headline"]/a/@href
-# Cards's names = '//div[@class="mw-parser-output"]//h2[@class="pi-item pi-item-spacing pi-title pi-secondary-background"]/text()
-# 
+# Cards's names = //div[@class="mw-parser-output"]//h2[@class="pi-item pi-item-spacing pi-title pi-secondary-background"]/text()
+# Cards's description = //div[@class="quote-block"]/i/b/text()
+# Cards's cost = //div[@data-source="Cost"]/div[@class="pi-data-value pi-font"]/text()
+# Cards's rarity = //div[@data-source="Rarity"]/div[@class="pi-data-value pi-font"]/text()
+
+
+
 
 class cards(scrapy.Spider):
     name = 'cards'
@@ -32,8 +37,16 @@ class cards(scrapy.Spider):
     def get_info(self, response):
         
         name = response.xpath('//div[@class="mw-parser-output"]//h2[@class="pi-item pi-item-spacing pi-title pi-secondary-background"]/text()').get()
+        description = response.xpath('//div[@class="quote-block"]/i/b/text()').get()
+        cost = response.xpath('//div[@data-source="Cost"]/div[@class="pi-data-value pi-font"]/text()').get()
+        rarity = response.xpath('//div[@data-source="Rarity"]/div[@class="pi-data-value pi-font"]/text()').get()
 
-        yield {'names' : name}
+        info = {'names' : name,
+                'description' : description,
+                'cost' : cost,
+                'rarity' : rarity}
+
+        return info
 
 
 
