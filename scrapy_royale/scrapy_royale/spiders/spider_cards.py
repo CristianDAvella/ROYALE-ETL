@@ -2,7 +2,7 @@ from unicodedata import name
 import scrapy
 
 # Estado actual: Extrae informacion de todas las cartas en un archivo csv.
-# Siquiente paso: tipear informacion usando pandas.
+# Siguiente paso: tipear informacion usando pandas.
 # Objetivo del dia: 
 
 
