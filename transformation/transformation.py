@@ -1,17 +1,13 @@
 from operator import is_not
 import pandas as pd
 
-# Estado actual: arroja el error -> ValueError: invalid literal for int() with base 10: '? '
-# Siguiente paso: probar transformando la columna names. 
-# Objetivo del dia: crear una funcion que detecte si los datos de una columna son numericos.
+# Estado actual: imprime una lista de booleanos afirmando si existe en esa posicion uno de los primeros 11 numeros naturales incluyendo el 0.
+# Siguiente paso: crear una funcion que detecte si los datos de una columna son numericos y retornar la posicion. 
+# Objetivo del dia: 
 
 def is_number(colum:pd.Series):
-    positions = []
     numbers = ['1','2','3','4','5','6','7','8','9','10','0']
-
-    for data in  colum:
-        if not(data in numbers):
-            positions = colum.isin([data])
+    positions = colum.isin(numbers)
 
     return positions
 
