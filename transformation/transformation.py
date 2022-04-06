@@ -1,26 +1,40 @@
+from array import array
 from operator import is_not
 import pandas as pd
+import numpy as np
 
-# Estado actual: imprime una lista de booleanos afirmando si existe en esa posicion uno de los primeros 11 numeros naturales incluyendo el 0.
-# Siguiente paso: crear una funcion que detecte si los datos de una columna son numericos y retornar la posicion. 
+# Estado actual: crear una funcion que detecte si los datos de una columna son numericos y retornar la posicion. 
+# Siguiente paso: cambiar el tipo de cada columna segun corresponda.
 # Objetivo del dia: 
 
 def is_number(colum:pd.Series):
     numbers = ['1','2','3','4','5','6','7','8','9','10','0']
-    positions = colum.isin(numbers)
+    positions = []
+    accountant = 0 
+
+    for data in colum:
+        if data not in numbers:
+            positions.append(accountant)
+
+        accountant = accountant+1
 
     return positions
+
 
 
 if __name__ == '__main__':
 
     data =  pd.read_csv('../scrapy_royale/cards.csv')
+    
+    positions_notnumbers = is_number(data['cost'])
+    simbol = data['cost'].get(positions_notnumbers[0])
+    data['cost'] = data['cost'].replace({simbol:np.nan})
 
-#    data_transformed = data.astype({'rarity':'category'})
+    data = data.astype({'cost':'int32'}, copy=True, errors='ignore')
+    data.astype({'rarity':'category'})
 
- #   print(data_transformed.info())
-
-    print(is_number(data['cost']))
+    print(data.info())
+    
 
 # Bifurcacion
 # Problema: el motor mysql no responde
