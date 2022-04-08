@@ -2,8 +2,8 @@ from operator import is_not
 import pandas as pd
 import numpy as np
 
-# Estado actual: crear una funcion que detecte si los datos de una columna son numericos y retornar la posicion. 
-# Siguiente paso: cambiar el tipo de cada columna segun corresponda.
+# Estado actual: cambia el tipo de cada columna segun corresponda.
+# Siguiente paso: 
 # Objetivo del dia: 
 
 def is_number(colum:pd.Series):
@@ -29,11 +29,18 @@ if __name__ == '__main__':
     simbol = data['cost'].get(positions_notnumbers[0])
     data['cost'] = data['cost'].replace({simbol:np.nan})
 
-    data_transform = data.astype({'names':'str'}, copy=True)
-    data_transform = data.astype({'description':'str'}, copy=True)
-    data_transform = data.astype({'rarity':'category'}, copy=True)
+    data_transform = data.copy()
+
+    data_transform = data_transform.dropna()
+    data_transform = data_transform.astype({'cost':'int32'})
+    data_transform = pd.concat([data_transform, data[33:34]])
+
+    data_transform = data_transform.astype({'names':'str'}, copy=True)
+    data_transform = data_transform.astype({'description':'str'}, copy=True)
+    data_transform = data_transform.astype({'rarity':'category'}, copy=True)
 
     print(data_transform.info())
+
         
 
 # Bifurcacion
