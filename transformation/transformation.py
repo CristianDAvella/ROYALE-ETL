@@ -1,5 +1,6 @@
 from array import array
 from operator import is_not
+from typing_extensions import dataclass_transform
 import pandas as pd
 import numpy as np
 
@@ -30,10 +31,10 @@ if __name__ == '__main__':
     simbol = data['cost'].get(positions_notnumbers[0])
     data['cost'] = data['cost'].replace({simbol:np.nan})
 
-    data = data.astype({'cost':'int32'}, copy=True, errors='ignore')
+    data_transform = data.astype({'cost':'int32'}, copy=True, errors='ignore')
     data.astype({'rarity':'category'})
 
-    print(data.info())
+    print(data_transform.info())
     
 
 # Bifurcacion
