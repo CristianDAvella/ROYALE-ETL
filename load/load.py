@@ -1,12 +1,10 @@
 import psycopg2
 
-conection = psycopg2.connect(database="royale", user="postgres", password="")
-'''
 try:
-    
+    conection = psycopg2.connect("dbname=postgres user=comodoro")
     print("Conectado a la base de datos")
 except psycopg2.Error as e:
-    print("Error:")
-    print(e.pgerror)
+    print("Error al intentar conectarce a la base de datos:")
+    print(e)
 
-'''
+
