@@ -40,9 +40,3 @@ if __name__ == '__main__':
     data_transform = data_transform.astype({'rarity':'category'}, copy=True)
 
     print(data_transform.info())
-
-        
-
-# Bifurcacion
-# Problema: el motor mysql no responde
-# intentar: https://medium.com/el-acordeon-del-programador/iniciando-mysql-manualmente-en-windows-47a987aa6cff
