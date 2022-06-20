@@ -1,5 +1,6 @@
 import psycopg2
 import pandas as pd
+import numpy as np
 
 def conect():
     try:
@@ -14,23 +15,35 @@ def conect():
 def get_info():
     data = pd.read_csv("/mnt/f/proyectos/mi_primer_etl/scrapy_royale/cards.csv")
     
-    names = data["names"][0]
-    costs = data["cost"][0]
-    descriptions = data["description"][0]
-    raritys = data["rarity"][0]
+    names = data["names"][33]
+    costs = np.nan
+    descriptions = data["description"][33]
+    raritys = data["rarity"][33]
 
     return [names, costs, descriptions, raritys]
 
 def push_in_database():
-    conection = conect()
-    comands = conection.cursor()
+    try:
+        conection = conect()
+        comands = conection.cursor()
 
-    sql_insert = "Insert into card(nombre, costo, descripcion, calidad)\
-                            values(%s, %s, %s, %s)"
-    data = get_info()
+        sql_insert = "Insert into card(nombre, costo, descripcion, calidad)\
+                                values(%s, %s, %s, %s)"
+        data = get_info()
 
-    comands.execute(sql_insert,data)
-    comands.close()
+        comands.execute(sql_insert,data)
+        conection.commit()
+
+        comands.execute("Delete from card where costo = 7;")
+        conection.commit()
+
+        comands.close()
+        conection.close()
+        print("Datos insertados en postgres")
+    
+    except psycopg2.Error as e:
+        print("Error al insertar los datos:")
+        print(e)
 
 if __name__ == '__main__':
     push_in_database()

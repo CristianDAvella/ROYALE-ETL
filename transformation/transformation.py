@@ -2,10 +2,6 @@ from operator import is_not
 import pandas as pd
 import numpy as np
 
-# Estado actual: cambia el tipo de cada columna segun corresponda.
-# Siguiente paso: 
-# Objetivo del dia: 
-
 def is_number(colum:pd.Series):
     numbers = ['1','2','3','4','5','6','7','8','9','10','0']
     positions = []
@@ -23,12 +19,12 @@ def is_number(colum:pd.Series):
 
 if __name__ == '__main__':
 
-    data =  pd.read_csv('../scrapy_royale/cards.csv')
+    data =  pd.read_csv("/mnt/f/proyectos/mi_primer_etl/scrapy_royale/cards.csv")
     
     positions_notnumbers = is_number(data['cost'])
     simbol = data['cost'].get(positions_notnumbers[0])
     data['cost'] = data['cost'].replace({simbol:np.nan})
-
+    
     data_transform = data.copy()
 
     data_transform = data_transform.dropna()
@@ -40,3 +36,4 @@ if __name__ == '__main__':
     data_transform = data_transform.astype({'rarity':'category'}, copy=True)
 
     print(data_transform.info())
+    print(data_transform.tail())
