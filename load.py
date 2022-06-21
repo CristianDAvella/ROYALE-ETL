@@ -1,6 +1,5 @@
 import psycopg2
-import pandas as pd
-import numpy as np
+from transformation.transformation import get_info
 
 def conect():
     try:
@@ -12,15 +11,6 @@ def conect():
 
     return conection
 
-def get_info():
-    data = pd.read_csv("/mnt/f/proyectos/mi_primer_etl/scrapy_royale/cards.csv")
-    
-    names = data["names"][33]
-    costs = np.nan
-    descriptions = data["description"][33]
-    raritys = data["rarity"][33]
-
-    return [names, costs, descriptions, raritys]
 
 def push_in_database():
     try:
@@ -34,7 +24,7 @@ def push_in_database():
         comands.execute(sql_insert,data)
         conection.commit()
 
-        comands.execute("Delete from card where costo = 7;")
+        comands.execute("Delete from card where costo = -1;")
         conection.commit()
 
         comands.close()
@@ -46,4 +36,4 @@ def push_in_database():
         print(e)
 
 if __name__ == '__main__':
-    push_in_database()
+    pass

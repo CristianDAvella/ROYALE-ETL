@@ -1,39 +1,35 @@
 from operator import is_not
 import pandas as pd
-import numpy as np
 
-def is_number(colum:pd.Series):
+# help to fution 'normalize_costs'
+def simbols_invalid(colum:pd.Series):
     numbers = ['1','2','3','4','5','6','7','8','9','10','0']
-    positions = []
-    accountant = 0 
+    simbols = []
 
     for data in colum:
-        if data not in numbers:
-            positions.append(accountant)
+        if (data not in numbers) and (data not in simbols):
+            simbols.append(data)
 
-        accountant = accountant+1
-
-    return positions
+    return simbols
 
 
+def normalize_costs(data_frame:pd.DataFrame):
 
-if __name__ == '__main__':
-
-    data =  pd.read_csv("/mnt/f/proyectos/mi_primer_etl/scrapy_royale/cards.csv")
+    list_simbols_invalid = simbols_invalid(data_frame['cost'])
+    data_frame['cost'] = data_frame['cost'].replace(to_replace=list_simbols_invalid, value="-1")
     
-    positions_notnumbers = is_number(data['cost'])
-    simbol = data['cost'].get(positions_notnumbers[0])
-    data['cost'] = data['cost'].replace({simbol:np.nan})
-    
-    data_transform = data.copy()
+    return data_frame
 
-    data_transform = data_transform.dropna()
-    data_transform = data_transform.astype({'cost':'int32'})
-    data_transform = pd.concat([data_transform, data[33:34]])
 
-    data_transform = data_transform.astype({'names':'str'}, copy=True)
-    data_transform = data_transform.astype({'description':'str'}, copy=True)
-    data_transform = data_transform.astype({'rarity':'category'}, copy=True)
+def get_info():
+    data = pd.read_csv("/mnt/f/proyectos/mi_primer_etl/scrapy_royale/cards.csv")
+    data = normalize_costs(data)
 
-    print(data_transform.info())
-    print(data_transform.tail())
+    names = data["names"]
+    costs = data["cost"]
+    descriptions = data["description"]
+    raritys = data["rarity"]
+
+    return [names, costs, descriptions, raritys]
+
+
