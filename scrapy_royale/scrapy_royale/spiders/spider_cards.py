@@ -1,10 +1,6 @@
 from unicodedata import name
 import scrapy
 
-# Estado actual: Extrae informacion de todas las cartas en un archivo csv.
-# Siguiente paso: tipear informacion usando pandas.
-# Objetivo del dia: 
-
 
 #   XPATH Sentenses
 # Cards's lincks = //div[@class="card-overview"]//span[@class="mw-headline"]/a/@href
